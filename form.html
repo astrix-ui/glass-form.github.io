@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        color: aliceblue;
+    }
+
+    body { 
+        /* background-image: url(newnew.jppg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; */
+        background-color: rgb(7, 1, 22);
+    }
+
+    .center {
+        text-align: center;
+    }
+
+
+
+
+    .h_primary {
+        color: aliceblue;
+        text-shadow: 0.5rem 0.1rem 3rem rgb(213, 213, 213);
+        margin-top: 1rem;
+        font-size: 3rem;
+    }
+
+    .box {
+        border: 1px solid rgba(255, 255, 255, 0.092);
+        box-shadow: 0.5rem 0.5rem 4rem rgba(255, 255, 255, 0.263);
+        border-radius: 0.5rem;
+        max-width: 80vw;
+       width: fit-content;
+        min-width: 40vw;
+        position: relative;
+        max-height: 70vh;
+        margin: 5rem auto;
+        background-color: rgba(255, 255, 255, 0.108);
+        display: flex;
+        backdrop-filter:blur(10px);
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        padding: 1rem;
+       
+    }
+
+    .content {
+        margin: 0.7rem 0;
+    }
+
+    .namebox {
+        font-size: 1.3rem;
+        padding: 0.2rem 3.5rem;
+        border-radius: 0.3rem;
+        border: 0.1rem solid rgba(255, 255, 255, 0.081);
+        color: #303030;
+        background-color: rgb(46, 46, 46);
+    }
+
+    .pwdbox {
+        font-size: 1.3rem;
+        padding: 0.2rem 3.5rem;
+        margin-bottom: 2rem;
+        border-radius: 0.3rem;
+        border: 0.1rem solid rgba(255, 255, 255, 0.081);
+        color: #303030;
+        background-color: rgb(46, 46, 46);
+    }
+
+    a {
+        margin-top: auto;
+        text-decoration: none;
+        background-color: aliceblue;
+        color: black;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        text-align: center;
+    }
+
+    .sec {
+        font-size: 4rem;
+        margin-left: 0.5rem;
+        font-weight: 1000;
+        margin-bottom: -1rem;
+        margin-top: -0.5rem;
+    }
+
+    .tri {
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+        color: #fdf5f59c;
+        font-weight: 100;
+    }
+
+    input::placeholder {
+        font-size: 0.8rem;
+        color: rgb(172, 170, 170);
+        text-align: left;
+        
+    }
+
+    form {
+        margin-top: -1rem;
+        margin-left: 0.5rem;
+    }
+
+    @media only screen and (max-width:500px){
+        .box{max-width: 70vw;
+            
+        }
+        .sec{font-size: 3rem;
+        margin-left: 1rem;
+        }
+        form{margin-left: 0rem;}
+        .tri {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            margin-left: 1rem;
+        }
+        .sec, .tri {margin-left: 0rem;}
+        
+        .namebox, .pwdbox {
+            font-size: 1rem;
+            padding: 0.2rem 0.2rem;
+        } 
+    }
+
+    @media only screen and (max-width: 340px){
+        .sec{font-size: 1.9rem;}
+        .namebox, .pwdbox{font-size: 0.5rem; padding: 0.5rem 1rem;}
+        .box{height: 60vh;}
+    }
+
+    .circle1{
+    padding: 8rem 8rem;
+    position: fixed;
+    border-radius: 20rem;
+    background-color: purple;
+    top: 28rem;
+    left: 20rem;
+    }
+    .circle2{
+    padding: 8rem 8rem;
+    position: fixed;
+    border-radius: 20rem;
+    background-color: rgb(128, 70, 0);
+    bottom: 20rem;
+    right: 20rem;
+    }
+</style>
+
+<body>
+    <div class="circle1">
+
+    </div>
+    <div class="circle2">
+
+    </div>
+
+    <h1 class="h_primary center">Login or Create Account</h1>
+
+    <section class="box">
+        <h2 class="sec">Welcome<br>Back!</h2>
+        <p class="tri">Enter your credentials</p>
+        <form>
+            <div class="name content">
+                <label for="Name"> Name </label>
+            </div>
+            <input type="text" name="Name" class="namebox content" placeholder="xyz@gmail.com">
+            <div class="pwd content">
+                <label for="pwd"> Password </label>
+            </div>
+            <input type="password" name="pwd" class="pwdbox content" placeholder="minimum 6 characters">
+        </form>
+
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">Submit</a>
+
+    </section>
+</body>
+
+</html>
